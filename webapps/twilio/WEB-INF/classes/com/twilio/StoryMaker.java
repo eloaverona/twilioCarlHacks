@@ -20,7 +20,7 @@ import java.util.ArrayList;
 
 
    public Integer getLastVisited() {
-     return history.get(history.size()-1)
+     return history.get(history.size()-1);
    }
 
 
@@ -53,7 +53,7 @@ import java.util.ArrayList;
 
 
 
-   public ArrayList<
+  
 
 
  }
