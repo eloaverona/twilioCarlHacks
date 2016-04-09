@@ -9,11 +9,11 @@ import java.util.HashMap;
 public class CreateNodeTest{
 
     private HashMap<Integer, Node>  mapFromIntToNode; //This hashmap it what maps an identifier to a particular node. It is used in storymaker
-	//to identify where in the story the user currently is and to record where the user is going next;
+    //to identify where in the story the user currently is and to record where the user is going next;
 
     public CreateNodeTest(){
         HashMap<String, Node> optionsNode1 = new HashMap<>();
-		    HashMap<String, Node> optionsNode2 = new HashMap<>();
+        HashMap<String, Node> optionsNode2 = new HashMap<>();
         HashMap<String, Node> optionsNode3 = new HashMap<>();
         this.mapFromIntToNode = new HashMap<>();
         Node node1 = new Node("Welcome to the game. a: go to node 2, b: go to node 3");
@@ -34,8 +34,8 @@ public class CreateNodeTest{
         node3.setOptions(optionsNode3);
 
         node1.setIdentifier(0);
-		    node2.setIdentifier(1);
-		    node3.setIdentifier(2);
+        node2.setIdentifier(1);
+        node3.setIdentifier(2);
 
         mapFromIntToNode.put(node1.getIdentifier(), node1);
         mapFromIntToNode.put(node2.getIdentifier(), node2);
@@ -50,9 +50,9 @@ public class CreateNodeTest{
         // node1.setOptions(optionsNode1);
         // optionsNode2.put("option1", node3);
         // node2.setOptions(optionsNode2);
-		    // node1.setIdentifier(0);
-		    // node2.setIdentifier(1);
-		    // node3.setIdentifier(2);
+        // node1.setIdentifier(0);
+        // node2.setIdentifier(1);
+        // node3.setIdentifier(2);
         // mapFromIntToNode.put(node1.getIdentifier(), node1);
         // mapFromIntToNode.put(node2.getIdentifier(), node2);
         // mapFromIntToNode.put(node3.getIdentifier(), node3);
