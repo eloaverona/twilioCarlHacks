@@ -6,7 +6,11 @@ import java.io.IOException;
 
 import com.twilio.sdk.verbs.TwiMLResponse;
 import com.twilio.sdk.verbs.TwiMLException;
+import com.twilio.sdk.verbs.Sms;
 import com.twilio.sdk.verbs.Message;
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+
 
 public class TwilioServlet extends HttpServlet {
 
@@ -19,11 +23,11 @@ public class TwilioServlet extends HttpServlet {
 
         HttpSession session = request.getSession(true);
 
-        ArrayList<int> history = session.getAttribute("history");
-        if history == null) {
-          session.setAttribute("history", new ArrayList<int>());
-          history = session.getAttribute("history");
-        } 
+        
+        if (session.getAttribute("history") == null) {
+          session.setAttribute("history", new ArrayList<Integer>());
+        }
+		ArrayList<Integer> history = (ArrayList<Integer>) session.getAttribute("history");
         history.add(1);
 
         String message = "You have texted " + history.size() + " times.";
