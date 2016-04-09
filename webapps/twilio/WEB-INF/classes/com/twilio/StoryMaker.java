@@ -32,21 +32,29 @@ public class StoryMaker {
 
 
     public String makeResponse(String message) {
+		String response = "You have entered an invalid command. Please try again. "; //default response is the invalid user input response.
+		if(player.historySize() == 0){
+			//message = "a";
 
-		Node currentNode = getCurrentNode();
-		String response = "";
-
-		if(player.historySize() == 1){
-			response = currentNode.getText();
-			player.addToHistory(1);
+			player.addToHistory(0);
+			response = "Welcome to the game. These are the instructions";
 			return response;
 		}
-		 response = "You have entered an invalid command. Please try again. "; //default response is the invalid user input response.
+		if(player.historySize() == 1){
+			message = "a";
+		}
+		Node currentNode = getCurrentNode();
+
+
+
+
+
 
 
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
 
 		Node nextNode = currentNode.whatNext(message); // Add FailSafe to tell user if they have an invalid command
+
 
 
 

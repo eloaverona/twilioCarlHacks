@@ -20,7 +20,7 @@ public class Player {
 
              objects = new ArrayList<String>();
              history = new ArrayList<Integer>();
-             history.add(0);
+
         }
 
 
@@ -41,6 +41,7 @@ public class Player {
         }
 
         public Integer getCurrentPosition(){
+
             return history.get(history.size()-1);
         }
 
