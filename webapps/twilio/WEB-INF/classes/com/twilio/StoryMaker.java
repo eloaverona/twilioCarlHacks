@@ -12,11 +12,9 @@ public class StoryMaker {
 
     private ArrayList<Integer> history;
     private HashMap<Integer, Node> mapFromIntToNode;
-    private String defaultResponse  = "You have entered an invalid command. Please try again. ";
 
 
-
-    public StoryMaker(ArrayList<Integer> history) {
+	public StoryMaker(ArrayList<Integer> history) {
         this.history = history;
 	      CreateNodeTest testNodes = new CreateNodeTest();
 	      this.mapFromIntToNode = testNodes.getMapFromIntToNode();
@@ -28,8 +26,9 @@ public class StoryMaker {
     public String makeResponse(String message) {
 
 
-	      Node currentNode = getCurrentNode();
-        String response = defaultResponse; //default response, Neccessary?
+		Node currentNode = getCurrentNode();
+		String defaultResponse = "You have entered an invalid command. Please try again. ";
+		String response = defaultResponse; //default response is the invalid user input response.
 
     	  if (history.size() == 0) {
     		    response = currentNode.getText();
