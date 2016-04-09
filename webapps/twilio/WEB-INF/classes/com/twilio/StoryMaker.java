@@ -19,31 +19,36 @@ import java.util.ArrayList;
    }
 
 
-   public Integer getLastVisited() {
-     return history.get(history.size()-1);
-   }
-
+   
 
    public String makeResponse(String message) {
 
        //node = history.getLastVisited();
-      Integer number = history.size();
-
-      String response = "Hey, you have now texted me " + number + "times.";
-      history.add(number);
-
-      //  switch (node) {
-      //      case 1:  monthString = "January";
-      //               break;
-      //      case 2:  monthString = "February";
-      //               break;
-      //      case 3:  monthString = "March";
-      //               break;
+      
+	   
+	  
+      String response = "";
+	  if(history.size() == 0) {
+		  response = "You have 3 options!. Text back 1, 2 or 3";
+		  history.add(0);
+		  return response;
+	  }		
+	
+	  if(message == null) return response;
+      switch (message) {
+        case "1":  response = "You chose option 1! You win a prize";
+					history.add(1);
+				   break;
+        case "2":  response = "You chose option 2! You lost!";
+					history.add(2);
+                     break;
+		case "3":  response =  "You chose option 3! You lost!";
+                 break;
       //      case 4:  monthString = "April";
       //               break;
       //      default: monthString = "Invalid month";
       //               break;
-      //  }
+       }
      return response;
 
 

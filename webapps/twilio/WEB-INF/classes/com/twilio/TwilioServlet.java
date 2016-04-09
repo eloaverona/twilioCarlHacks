@@ -12,6 +12,9 @@ import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 
 
+ 
+
+
 public class TwilioServlet extends HttpServlet {
 
 
@@ -28,11 +31,12 @@ public class TwilioServlet extends HttpServlet {
 
         StoryMaker story = new StoryMaker(history);
 
+		String message = "";
 
         // Must call makeResponse before getLastVisited
-        String message = story.makeResponse("test");
-
-        history.add(story.getLastVisited());
+		message = story.makeResponse(request.getParameter("Body"));
+		
+        
 
         // Create a TwiML response and add our friendly message.
         TwiMLResponse twiml = new TwiMLResponse();
