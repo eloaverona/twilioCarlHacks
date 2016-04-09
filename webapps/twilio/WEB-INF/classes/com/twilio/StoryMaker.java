@@ -18,7 +18,7 @@ public class StoryMaker {
 
     public StoryMaker(ArrayList<Integer> history) {
         this.history = history;
-	      CreateNodeTest testNodes = new createNodeTest();
+	      CreateNodeTest testNodes = new CreateNodeTest();
 	      this.mapFromIntToNode = testNodes.getMapFromIntToNode();
     }
 
