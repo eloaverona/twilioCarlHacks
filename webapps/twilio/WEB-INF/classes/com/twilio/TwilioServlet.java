@@ -24,16 +24,18 @@ public class TwilioServlet extends HttpServlet {
 
         HttpSession session = request.getSession(true);
 
-        if (session.getAttribute("history") == null) {
-          session.setAttribute("history", new ArrayList<Integer>());
-        }
-		    ArrayList<Integer> history = (ArrayList<Integer>) session.getAttribute("history");
 
-        StoryMaker story = new StoryMaker(history);
+        if (session.getAttribute("player") == null) {
+          session.setAttribute("player", new Player());
+        }
+
+        Player player = (Player) session.getAttribute("player");
+
+        StoryMaker story = new StoryMaker(player);
 
 
         // Must call makeResponse before getLastVisited. Actually Don't need to update history Array because it updates automatically.
-		    String message = story.makeResponse(request.getParameter("Body"));
+        String message = story.makeResponse(request.getParameter("Body"));
 
 
         // Create a TwiML response and add our friendly message.
