@@ -7,7 +7,7 @@ import java.util.ArrayList;
  */
 public class Player {
 
-    private String name;
+
     private ArrayList<String> objects;
     private ArrayList<Integer> history;
 
@@ -17,7 +17,7 @@ public class Player {
         *
         */
          public Player() {
-             this.name = name;
+
              objects = new ArrayList<String>();
              history = new ArrayList<Integer>();
              history.add(0);
