@@ -34,7 +34,14 @@ public class StoryMaker {
     public String makeResponse(String message) {
 
 		Node currentNode = getCurrentNode();
-		String response = "You have entered an invalid command. Please try again. "; //default response is the invalid user input response.
+		String response = "";
+
+		if(player.historySize() == 1){
+			response = currentNode.getText();
+			player.addToHistory(1);
+			return response;
+		}
+		 response = "You have entered an invalid command. Please try again. "; //default response is the invalid user input response.
 
 
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
