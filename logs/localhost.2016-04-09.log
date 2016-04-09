@@ -1,0 +1,57 @@
+abr 09, 2016 12:32:47 AM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 12:32:47 AM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 12:33:34 AM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: Marking servlet HelloWorld as unavailable
+abr 09, 2016 12:33:34 AM org.apache.catalina.core.ApplicationContext log
+GRAVE: Error loading WebappClassLoader
+  context: /twilio
+  delegate: false
+  repositories:
+    /WEB-INF/classes/
+----------> Parent Classloader:
+org.apache.catalina.loader.StandardClassLoader@4783da3f
+ com.twilio.HelloWorld
+java.lang.ClassNotFoundException: com.twilio.HelloWorld
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1128)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:827)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:129)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 12:33:34 AM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Allocate exception for servlet HelloWorld
+java.lang.ClassNotFoundException: com.twilio.HelloWorld
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1680)
+	at org.apache.catalina.loader.WebappClassLoader.loadClass(WebappClassLoader.java:1526)
+	at org.apache.catalina.core.StandardWrapper.loadServlet(StandardWrapper.java:1128)
+	at org.apache.catalina.core.StandardWrapper.allocate(StandardWrapper.java:827)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:129)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 12:36:58 AM org.apache.catalina.core.StandardWrapperValve invoke
+INFORMAZIONI: Servlet HelloWorld is currently unavailable
+abr 09, 2016 12:37:01 AM org.apache.catalina.core.StandardWrapperValve invoke
+INFORMAZIONI: Servlet HelloWorld is currently unavailable
+abr 09, 2016 12:37:29 AM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 12:37:29 AM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
