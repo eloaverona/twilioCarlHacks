@@ -4,15 +4,16 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
     version="2.4">
  
-    <display-name>Hello, World Application</display-name>
+    <display-name>Twilio SMS App</display-name>
+ 
     <servlet>
-        <servlet-name>HelloWorld</servlet-name>
-        <servlet-class>com.twilio.HelloWorld</servlet-class>
+        <servlet-name>TwilioServlet</servlet-name>
+        <servlet-class>com.twilio.TwilioServlet</servlet-class>
     </servlet>
  
     <servlet-mapping>
-        <servlet-name>HelloWorld</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>TwilioServlet</servlet-name>
+        <url-pattern>/sms</url-pattern>
     </servlet-mapping>
  
 </web-app>
