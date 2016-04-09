@@ -15,22 +15,24 @@ import java.util.ArrayList;
 public class TwilioServlet extends HttpServlet {
 
 
-
-
     // service() responds to both GET and POST requests.
     // You can also use doGet() or doPost()
     public void service(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         HttpSession session = request.getSession(true);
 
-        
         if (session.getAttribute("history") == null) {
           session.setAttribute("history", new ArrayList<Integer>());
         }
-		ArrayList<Integer> history = (ArrayList<Integer>) session.getAttribute("history");
-        history.add(1);
+		    ArrayList<Integer> history = (ArrayList<Integer>) session.getAttribute("history");
 
-        String message = "You have texted " + history.size() + " times.";
+        StoryMaker story = new StoryMaker(history);
+
+
+        // Must call makeResponse before getLastVisited
+        String message = story.makeResponse("test");
+
+        history.add(story.getLastVisited());
 
         // Create a TwiML response and add our friendly message.
         TwiMLResponse twiml = new TwiMLResponse();
