@@ -1000,3 +1000,303 @@ abr 09, 2016 9:29:37 AM org.apache.jk.server.JkMain start
 INFORMAZIONI: Jk running ID=0 time=0/38  config=null
 abr 09, 2016 9:29:37 AM org.apache.catalina.startup.Catalina start
 INFORMAZIONI: Server startup in 1801 ms
+abr 09, 2016 11:10:10 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:10:10 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:10:10 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1123 ms
+abr 09, 2016 11:10:10 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:10:10 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:10:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:10:11 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:10:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:10:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:10:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:10:12 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:10:12 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:10:12 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:10:12 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/37  config=null
+abr 09, 2016 11:10:12 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1690 ms
+abr 09, 2016 11:12:43 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:12:43 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:12:43 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1036 ms
+abr 09, 2016 11:12:43 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:12:43 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:12:43 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:12:44 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:12:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:12:44 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:12:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:12:45 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:12:45 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:12:45 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:12:45 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=1/43  config=null
+abr 09, 2016 11:12:45 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1846 ms
+abr 09, 2016 11:27:22 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:27:23 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:27:23 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1073 ms
+abr 09, 2016 11:27:23 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:27:23 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:27:23 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:27:23 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:27:23 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:27:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:27:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:27:24 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:27:24 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:27:24 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:27:24 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/56  config=null
+abr 09, 2016 11:27:24 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1814 ms
+abr 09, 2016 11:32:39 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:32:40 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:32:40 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1099 ms
+abr 09, 2016 11:32:40 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:32:40 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:32:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:32:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:32:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:32:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:32:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:32:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:32:41 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:32:41 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:32:41 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/42  config=null
+abr 09, 2016 11:32:42 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1744 ms
+abr 09, 2016 11:36:23 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:36:24 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:36:24 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1075 ms
+abr 09, 2016 11:36:24 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:36:24 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:36:24 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:36:24 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:36:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:36:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:36:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:36:25 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:36:25 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:36:26 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:36:26 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/42  config=null
+abr 09, 2016 11:36:26 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1725 ms
+abr 09, 2016 11:44:39 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:44:39 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:44:39 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1058 ms
+abr 09, 2016 11:44:40 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:44:40 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:44:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:44:40 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:44:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:44:40 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:44:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:44:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:44:41 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:44:41 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:44:41 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/47  config=null
+abr 09, 2016 11:44:41 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1792 ms
+abr 09, 2016 11:56:18 AM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 11:56:18 AM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:56:18 AM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1117 ms
+abr 09, 2016 11:56:18 AM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 11:56:18 AM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 11:56:18 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 11:56:19 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 11:56:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 11:56:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 11:56:19 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 11:56:20 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 11:56:20 AM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 11:56:20 AM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 11:56:20 AM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/35  config=null
+abr 09, 2016 11:56:20 AM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1718 ms
+abr 09, 2016 12:01:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 12:01:04 PM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:01:04 PM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1129 ms
+abr 09, 2016 12:01:04 PM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 12:01:04 PM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 12:01:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 12:01:05 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 12:01:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 12:01:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 12:01:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 12:01:06 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 12:01:06 PM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:01:06 PM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 12:01:06 PM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/40  config=null
+abr 09, 2016 12:01:06 PM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1681 ms
+abr 09, 2016 12:03:28 PM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 12:03:28 PM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:03:28 PM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1141 ms
+abr 09, 2016 12:03:28 PM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 12:03:28 PM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 12:03:28 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 12:03:29 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 12:03:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 12:03:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 12:03:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 12:03:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 12:03:30 PM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:03:30 PM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 12:03:30 PM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/48  config=null
+abr 09, 2016 12:03:30 PM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1717 ms
+abr 09, 2016 12:06:01 PM org.apache.catalina.core.AprLifecycleListener init
+INFORMAZIONI: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: C:\Program Files\Java\jdk1.8.0_60\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Skype\Phone\;C:\Python33;C:\Programmi\Git\bin;C:\Program Files\ggobi;C:\Program Files (x86)\PuTTY\;%CATALINA_HOME%\bin;C:/Program Files/Java/jdk1.8.0_60/bin;C:\Program Files\Docker Toolbox;.
+abr 09, 2016 12:06:02 PM org.apache.coyote.http11.Http11Protocol init
+INFORMAZIONI: Initializing Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:06:02 PM org.apache.catalina.startup.Catalina load
+INFORMAZIONI: Initialization processed in 1087 ms
+abr 09, 2016 12:06:02 PM org.apache.catalina.core.StandardService start
+INFORMAZIONI: Starting service Catalina
+abr 09, 2016 12:06:02 PM org.apache.catalina.core.StandardEngine start
+INFORMAZIONI: Starting Servlet Engine: Apache Tomcat/6.0.45
+abr 09, 2016 12:06:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor host-manager.xml
+abr 09, 2016 12:06:03 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFORMAZIONI: Deploying configuration descriptor manager.xml
+abr 09, 2016 12:06:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory docs
+abr 09, 2016 12:06:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory examples
+abr 09, 2016 12:06:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory ROOT
+abr 09, 2016 12:06:03 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFORMAZIONI: Deploying web application directory twilio
+abr 09, 2016 12:06:04 PM org.apache.coyote.http11.Http11Protocol start
+INFORMAZIONI: Starting Coyote HTTP/1.1 on http-8080
+abr 09, 2016 12:06:04 PM org.apache.jk.common.ChannelSocket init
+INFORMAZIONI: JK: ajp13 listening on /0.0.0.0:8009
+abr 09, 2016 12:06:04 PM org.apache.jk.server.JkMain start
+INFORMAZIONI: Jk running ID=0 time=0/52  config=null
+abr 09, 2016 12:06:04 PM org.apache.catalina.startup.Catalina start
+INFORMAZIONI: Server startup in 1735 ms
