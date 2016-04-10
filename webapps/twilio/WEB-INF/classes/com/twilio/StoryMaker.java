@@ -13,8 +13,10 @@ public class StoryMaker {
 	private Player player;
 
 
+
 	public StoryMaker(Player player) {
 		this.player = player;
+
 
 		// Here we create nodes and graph data Structure
 		TrialNodeTest testNodes = new TrialNodeTest();
@@ -37,13 +39,34 @@ public class StoryMaker {
 			return response;
 		}
 		if (player.historySize() == 1) { // Player is now ready to start game.
+			if(message == "sudo") player.setSudo(true);
 			message = "a";
+
 		}
 		Node currentNode = getCurrentNode();
+
 
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
 
 		message = message.toLowerCase();
+		//if(player.isSudo()){
+			if(message.equals("boar")){
+				currentNode = mapFromIntToNode.get(8);
+				player.addToHistory(currentNode.getIdentifier());
+
+			}
+		if(message.equals("cellar")){
+			currentNode = mapFromIntToNode.get(4);
+			player.addToHistory(currentNode.getIdentifier());
+
+		}
+		if(message.equals("odin")){
+			currentNode = mapFromIntToNode.get(10);
+			player.addToHistory(currentNode.getIdentifier());
+
+		}
+		//}
+
 		Node nextNode = currentNode.whatNext(message); // Add FailSafe to tell user if they have an invalid command
 
 
@@ -57,7 +80,13 @@ public class StoryMaker {
 		if (nextNode.getObjectNeeded() != null ) { // If node needs an object
 			if (!player.getObjects().contains(nextNode.getObjectNeeded())) { // If player doesn't have object needed.
 				nextNode = mapFromIntToNode.get(nextNode.getAltNodeID());
+
 				altMessage = nextNode.getText() + " ";
+				if(nextNode.isDeath()){
+
+					player.clearHistory();
+					return altMessage;
+				}
 				nextNode = currentNode;
 
 			}

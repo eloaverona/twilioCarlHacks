@@ -81,10 +81,10 @@ public class TrialNodeTest {
         Node node41Alt = new Node(-41, "You need a lantern to light the torches and you don't have it.");
         Node node42 = new Node(42, "You kneel down to the box and open it. Inside is a full water bottle. You're surprised but relieved. It is impossible to imagine how good some water could taste right now. You pick the bottle up to your mouth before you notice that there is a string attached to the bottle. Suddenly an ominous rumbling sound begins to fill the room. From creaks and cracks all around the room, swarms of rats begin to rush in, more and more every second. Frantically you stand right up and begin to think of a way out. a: Go back");
         node42.setObjectFound("water bottle");
-        Node node43 = new Node(43, "A few of the crates are open, and inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can carry only one at a time. a: Take chain. b: Take Sand. c: Take gas.");
+        Node node43 = new Node(43, "A few of the crates are open, and inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can carry only one at a time. a: Take chain. b: Take Sand. c: Take gas. d: Go back");
         Node node44 = new Node(44, "You can see the door above you, it doesn't seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack. a: Go back");
         Node node441 = new Node(441, "You use the chain to climb up to the door. a: Walk through the door.");
-        node441.setObjectNeeded("water bottle");
+        //node441.setObjectNeeded("water bottle");
         Node node441Alt = new Node(-441, "This item seems too heavy. You don't see a need to carry it right now. a: Go back");
         Node node442 = new Node(442, "Even with the sand bags, you still cannot reach the door. The rats flood the room and eat you alive.");
         node442.setObjectNeeded("water bottle");
@@ -183,6 +183,8 @@ public class TrialNodeTest {
         optionsNode43.put("a", node441);
         optionsNode43.put("b", node442);
         optionsNode43.put("c", node443);
+        optionsNode43.put("d", node4);
+
         optionsNode44.put("a", node4);
         optionsNode441.put("a", node5);
 
