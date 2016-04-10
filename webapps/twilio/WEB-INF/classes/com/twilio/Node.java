@@ -8,16 +8,14 @@ import java.util.Set;
  * Class that contains info about parts of the story.
  */
 public class Node {
-    //private static final String optionGoBack = "Back"; //this is what the user must type if they want to go back in the game
-    // I don't think we need a back button. It just makes out program more likely to break. We can just put the go back option in the options hash map.
-    // I think we can think of our story graph as more of a graph then a tree. where there isn't necessrily a forward direction but just a new direction.
+
     private HashMap<String, Node> options; //hash map that connects the options moving forward to the correspondent nodes
     private String text; //text that contains description of the current scene
     private Integer identifier; // Integer that identifies each node uniquely;
     private boolean death; // Specifies if the node will kill the player
-    private String objectFound;
+    private String objectFound; // Object found at this node.
     private String objectNeeded; // If objectNeeded is not null, then Node needs an attribute
-    private Integer altNodeID;
+    private Integer altNodeID; // Node ID of alternate node. i.e. If you try to go through the door, and you don't have the key.
 
 
 
@@ -37,8 +35,6 @@ public class Node {
     }
 
 
-
-
 	// this methods takes in a String that is the user choice of a move and return the Node that the user will be next
     public Node whatNext(String userOption) { 
 		    //if(userOption.equals(optionGoBack))  { return prev; }
@@ -53,34 +49,6 @@ public class Node {
     }
 
 
-
-
-    public String messagePrompt() {
-
-        StringBuilder sb = new StringBuilder();
-        sb.append(text);
-        sb.append(" ");
-
-        if (options.get("a") != null) {
-            sb.append("a: ");
-            sb.append(options.get("a"));
-        }
-
-        if (options.get("b") != null) {
-            sb.append("b: ");
-            sb.append(options.get("b"));
-        }
-        if (options.get("c") != null) {
-            sb.append("c: ");
-            sb.append(options.get("c"));
-        }
-        if (options.get("d") != null) {
-            sb.append("d: ");
-            sb.append(options.get("d"));
-        }
-
-        return sb.toString();
-    }
 
     public void setOptions(HashMap<String, Node> options) {
         this.options = options;
@@ -128,8 +96,7 @@ public class Node {
 
         return options;
     }
-
-
+    
     public Integer getAltNodeID() {
         return altNodeID;
     }
