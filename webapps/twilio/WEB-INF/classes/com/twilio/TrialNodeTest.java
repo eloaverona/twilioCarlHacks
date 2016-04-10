@@ -29,6 +29,9 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode43 = new HashMap<>();
         HashMap<String, Node> optionsNode44 = new HashMap<>();
         HashMap<String, Node> optionsNode441 = new HashMap<>();
+        HashMap<String, Node> optionsNode441Alt = new HashMap<>();
+        HashMap<String, Node> optionsNode442Alt = new HashMap<>();
+        HashMap<String, Node> optionsNode443Alt = new HashMap<>();
         HashMap<String, Node> optionsNode5 = new HashMap<>();
         HashMap<String, Node> optionsNode6 = new HashMap<>();
         HashMap<String, Node> optionsNode61 = new HashMap<>();
@@ -77,14 +80,20 @@ public class TrialNodeTest {
         node41.setObjectFound("wrench");
         Node node41Alt = new Node(-41, "You need a lantern to light the torches and you don't have it.");
         Node node42 = new Node(42, "You kneel down to the box and open it. Inside is a full water bottle. You're surprised but relieved. It is impossible to imagine how good some water could taste right now. You pick the bottle up to your mouth before you notice that there is a string attached to the bottle. Suddenly an ominous rumbling sound begins to fill the room. From creaks and cracks all around the room, swarms of rats begin to rush in, more and more every second. Frantically you stand right up and begin to think of a way out. a: Go back");
-//        node42.setObjectFound("water bottle");
+        node42.setObjectFound("water bottle");
         Node node43 = new Node(43, "A few of the crates are open, and inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can carry only one at a time. a: Take chain. b: Take Sand. c: Take gas.");
-        Node node44 = new Node(44, "You can see the door above you, it doesn�t seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack. a: Go back");
+        Node node44 = new Node(44, "You can see the door above you, it doesn't seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack. a: Go back");
         Node node441 = new Node(441, "You use the chain to climb up to the door. a: Walk through the door.");
+        node441.setObjectNeeded("water bottle");
+        Node node441Alt = new Node(-441, "This item seems too heavy. You don't see a need to carry it right now. a: Go back");
         Node node442 = new Node(442, "Even with the sand bags, you still cannot reach the door. The rats flood the room and eat you alive.");
+        node442.setObjectNeeded("water bottle");
         node442.setDeath(true);
+        Node node442Alt = new Node(-442, "This item seems too heavy. You don't see a need to carry it right now. Go back");
         Node node443 = new Node(443, "You pour the gas on the rats for some odd reason. One of the rats runs past the lit candle and catches on fire. Now there is a swarm of rats on fire scattering frantically around the room. You die.");
+        node443.setObjectNeeded("water bottle");
         node443.setDeath(true);
+        Node node443Alt = new Node(-443, "This item seems too heavy. You don't see a need to carry it right now. Go back");
         Node node5 = new Node(5, "Your suspicion that someone is playing some insidious trick on you has been pretty much confirmed. From this door leads to a hallway that forks to the left and to the right. On the right is a courtyard, it would be nice to finally get outside. On the left are more stairs leading down. The sign above the stairs reads 'Boiler Room'. a: Go to courtyard. b: Go to Boiler Room");
         Node node6 = new Node(6, "You can tell that it is somewhere in the early hours of the morning, still dark out but the sun should be rising soon. The courtyard is small and the fences surrounding it are way too high up to climb. In the center is a large palm tree surrounded by some low lying bushes, and along the far end wall, you see a ladder leading onto a roof. a: Get a look through the holes of the fence. b: Sit by the central plants. c: Climb the ladder onto the roof. d: Go back. ");
         Node node61 = new Node(61, "It is difficult to see far given the thick foliage, but you can tell that the estate you've found yourself in is on a large hill. You can't see another town or any signs of civilized life from here at all. a: Go back.");
@@ -176,6 +185,11 @@ public class TrialNodeTest {
         optionsNode43.put("c", node443);
         optionsNode44.put("a", node4);
         optionsNode441.put("a", node5);
+
+        optionsNode441Alt.put("a", node4);
+        optionsNode442Alt.put("a", node4);
+        optionsNode443Alt.put("a", node4);
+
         optionsNode5.put("a", node6);
         optionsNode5.put("b", node7);
         optionsNode6.put("a", node61);
@@ -247,6 +261,9 @@ public class TrialNodeTest {
         node43.setOptions(optionsNode43);
         node44.setOptions(optionsNode44);
         node441.setOptions(optionsNode441);
+        node441Alt.setOptions(optionsNode441Alt);
+        node442Alt.setOptions(optionsNode442Alt);
+        node443Alt.setOptions(optionsNode443Alt);
         node5.setOptions(optionsNode5);
         node6.setOptions(optionsNode6);
         node61.setOptions(optionsNode61);
@@ -291,6 +308,9 @@ public class TrialNodeTest {
         mapFromIntToNode.put(node441.getIdentifier(), node441);
         mapFromIntToNode.put(node442.getIdentifier(), node442);
         mapFromIntToNode.put(node443.getIdentifier(), node443);
+        mapFromIntToNode.put(node441Alt.getIdentifier(), node441Alt);
+        mapFromIntToNode.put(node442Alt.getIdentifier(), node442Alt);
+        mapFromIntToNode.put(node443Alt.getIdentifier(), node443Alt);
         mapFromIntToNode.put(node5.getIdentifier(), node5);
         mapFromIntToNode.put(node6.getIdentifier(), node6);
         mapFromIntToNode.put(node61.getIdentifier(), node61);
