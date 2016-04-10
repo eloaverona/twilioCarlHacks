@@ -39,10 +39,12 @@ public class Node {
     public Node whatNext(String userOption) { 
 		    //if(userOption.equals(optionGoBack))  { return prev; }
 
-        Set<String> currentOptions =  options.keySet();
-        for(String option : currentOptions){
-            if(userOption.equals(option)){
-                return (options.get(option));
+        if (options != null) {
+            Set<String> currentOptions = options.keySet();
+            for (String option : currentOptions) {
+                if (userOption.equals(option)) {
+                    return (options.get(option));
+                }
             }
         }
         return null;
@@ -96,7 +98,7 @@ public class Node {
 
         return options;
     }
-    
+
     public Integer getAltNodeID() {
         return altNodeID;
     }
