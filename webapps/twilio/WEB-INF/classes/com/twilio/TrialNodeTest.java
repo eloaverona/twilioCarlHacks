@@ -107,7 +107,7 @@ public class TrialNodeTest {
         Node node711 = new Node(711, "As you turn the valve, the boiler begins to shake more violently and radiate more heat than before. You feel the sweat dripping from all over your body until you realize the heat has just set the sprinklers off in the room. a: Turn the valve. b: Go back" );
         Node node7111 = new Node(7111, "You turn the valve even more, it gets more and more difficult to turn the valve as you go but you continue anyways. At some point, several bolts burst and shoot off from the tank. The boiler instantaneously explodes destroying the room and killing you in the process.");
         node7111.setDeath(true);
-        Node node721 = new Node(721, "You unscrew each of the nuts and bolts of the vent and begin crawling through the air ducts. After a while, you drop down into a room where you see a shadowed figure sitting in a chair facing you. a: Crawl through the vent. b: Go Back ");
+        Node node721 = new Node(721, "You unscrew each of the nuts and bolts of the vent and begin crawling through the air ducts. After a while, you drop down into a room where you see a shadowed figure sitting in a chair facing you. a: Continue. b: Go Back ");
         node721.setObjectNeeded("wrench");
         Node node721Alt = new Node(-721, "You try to pry open the vent with your bare heads, but it doesn't even budge.");
         Node node81 = new Node(81, "You try and dodge the boar but its tusk still manages to catch your leg. You are hurt. Running won't be an option anymore. a: Dodge. b: Fight");
@@ -133,12 +133,10 @@ public class TrialNodeTest {
         Node node92 = new Node(92, "You open the red door and step into a room. Ahead of you is a shadowy figure sitting in a chair facing you. a: continue");
         Node node10 = new Node(10, "You want to say something but the words get stuck in your throat. The figure welcomes you with a 'hello', in a casual and calm tone. a: Who are you? b: What did you do to me?");
         Node node101 = new Node(101, "You call me Odin. I am the one that orchestrated this little game you've been playing. You've done well to make it this far. a: I've done well to make it this far? What game are you talking about? What the Hell? b: This all seems so familiar, I know I've been here before. I know I've heard your voice before. Let me see your face.");
-        Node node1011 = new Node(1011, "The voice lets out a deep sigh. 'Not quite the response I was looking for. Let's go back to square one.' Suddenly you hear a loud thud, you've been hit with some blunt object under your right eye. The world goes black. You open your eyes and find yourself in a dimly lit room.");
+        Node node1011 = new Node(1011, "The voice lets out a deep sigh. 'Not quite the response I was looking for. Let's go back to square one.' Suddenly you hear a loud thud, you've been hit with some blunt object under your right eye. The world goes black. You open your eyes and find yourself in a dimly lit room. - THE END");
         node1011.setDeath(true);
-        Node node1012 = new Node(1012, "The voice bellows a hearty laugh, begins to clap, and stands up from the chair. The figure begins to walk towards you. As it steps into the light, you see the figures face take shape. It looks just like you.");
+        Node node1012 = new Node(1012, "The voice bellows a hearty laugh, begins to clap, and stands up from the chair. The figure begins to walk towards you. As it steps into the light, you see the figures face take shape. It looks just like you. - THE END");
         node1012.setDeath(true);
-        //TODO THIS ABOVE IS WEIRD.. THE GAME ENDS BUT NOTHING KILLS YOU
-        //TODO WHAT ABOUT KNIFE THING? DO YOU ALSO LOOSE IT IN NODE 9 EVEN WHEN YOU HAVEN'T USED IT BEFORE?
 
         Node node102 = new Node(102, "The voice says 'I saw what you were capable of. How you think. What makes you frustrated. You've impressed me so far.' a: Let me show you something to really be impressed about. (attack) b: I'm not some show dog that needs to impress you, give me some answers!");
         Node node1021 = new Node(1021, "You stab the figure with the knife multiple times. You stand above its dead body. In the light you see the figures face looked just like yours. - THE END");
