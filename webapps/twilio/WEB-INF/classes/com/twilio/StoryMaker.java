@@ -95,11 +95,7 @@ public class StoryMaker {
 				nextNode = currentNode;
 
 			}
-			else{
-				if(nextNode.getObjectNeeded().equals("knife")){
-					player.dropItem("knife");
-				}
-			}
+
 		}
 
         response = nextNode.getText();
@@ -111,13 +107,13 @@ public class StoryMaker {
 			player.clearHistory();
 		}
 
-		/*
+
 		if (nextNode.getIdentifier() == 9) { // Drop the knife if player reaches node 9.
 			if (player.getObjects().contains("knife")) {
 				player.dropItem("knife");
 			}
 		}
-		*/
+
 
 		if (nextNode.getObjectFound() != null) { // If player finds an object at this node
 			player.addItem(nextNode.getObjectFound());
