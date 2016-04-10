@@ -36,6 +36,10 @@ public class Player {
             objects.add(item);
         }
 
+        public void dropItem(String item){
+            objects.remove(item);
+        }
+
         public void addToHistory(Integer currentPosition){
             history.add(currentPosition);
         }

@@ -15,41 +15,36 @@ public class TrialNodeTest {
 
         HashMap<String, Node> optionsNode1 = new HashMap<>();
         HashMap<String, Node> optionsNode2 = new HashMap<>();
-        HashMap<String, Node> optionsNode3 = new HashMap<>();
-        HashMap<String, Node> optionsNode4 = new HashMap<>();
+        HashMap<String, Node> optionsNode21 = new HashMap<>();
+        HashMap<String, Node> optionsNode26 = new HashMap<>();
         this.mapFromIntToNode = new HashMap<>();
 
-        Node node1 = new Node("Welcome to the game. Text anything to continue");
-        Node node2 = new Node("You have made it to node 2. a: go to node 3 , b: go to node 4");
-        Node node3 = new Node("You have made it to node 3. a: go back to node 2 , b: go to node 4");
-        Node node4 = new Node("You have made it to node 4. a: go back to node 2, b: go back to node 3");
+        Node node1 = new Node(0, "Welcome to the game. Text anything to continue");
+        Node node2 = new Node(2, "You open your eyes and find yourself in a dimly lit room, immediately you try and stand up from the chair you find yourself in but something restrains you. Your wrists and ankles have been tied to the chair with rope, after a brief struggle you manage to free yourself. A quick glance of the room teaches you a few things. There seems to be a wooden door to the right, along with a desk directly ahead of you. The rest of room is remarkably empty, save for the ubiquitous cobwebs of course. a: Check out the door, b: Check out the desk.");
+        Node node21 = new Node(21, "The door is made up of clearly old wood, you would think it would break easily but the lock seems sturdy and thick. a: Try and open the door, b: Go back.");
+        Node node22 = new Node(22, "The desk is made up of hard redwood, but you almost couldn’t tell given all the papers scattered across the top. Along with the papers you notice a drawer. a: Investigate the paper, b: Open the drawer");
 
         optionsNode1.put("a", node2);
 
-        optionsNode2.put("a", node3);
-        optionsNode2.put("b", node4);
+        optionsNode2.put("a", node21);
+        optionsNode2.put("b", node22);
 
-        optionsNode3.put("a", node2);
-        optionsNode3.put("b", node4);
+        optionsNode21.put("b", node2);
+        optionsNode21.put("a", node2);
 
-        optionsNode4.put("a", node2);
-        optionsNode4.put("b", node3);
+        optionsNode26.put("a", node2);
+        optionsNode26.put("b", node21);
 
         node1.setOptions(optionsNode1);
         node2.setOptions(optionsNode2);
-        node3.setOptions(optionsNode3);
-        node4.setOptions(optionsNode4);
+        node21.setOptions(optionsNode21);
+        node22.setOptions(optionsNode26);
 
-
-        node1.setIdentifier(0);
-        node2.setIdentifier(1);
-        node3.setIdentifier(2);
-        node4.setIdentifier(3);
 
         mapFromIntToNode.put(node1.getIdentifier(), node1);
         mapFromIntToNode.put(node2.getIdentifier(), node2);
-        mapFromIntToNode.put(node3.getIdentifier(), node3);
-        mapFromIntToNode.put(node4.getIdentifier(), node4);
+        mapFromIntToNode.put(node21.getIdentifier(), node21);
+        mapFromIntToNode.put(node22.getIdentifier(), node22);
 
 
 

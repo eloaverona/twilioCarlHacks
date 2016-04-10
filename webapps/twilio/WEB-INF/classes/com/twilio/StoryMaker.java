@@ -23,33 +23,22 @@ public class StoryMaker {
 	}
 
 
-//	public StoryMaker(ArrayList<Integer> history) {
-//        this.history = history;
-//		TrialNodeTest testNodes = new TrialNodeTest();
-//		this.mapFromIntToNode = testNodes.getMapFromIntToNode();
-//    }
-
 
 
     public String makeResponse(String message) {
-		String response = "You have entered an invalid command. Please try again. "; //default response is the invalid user input response.
+		message = message.toLowerCase();
+		String response = "You entered an invalid command. Please try again. "; //default response is the invalid user input response.
 		if(player.historySize() == 0){
 			//message = "a";
 
 			player.addToHistory(0);
-			response = "Welcome to the game. These are the instructions";
+			response = "Welcome to the game. These are the instructions. Reply anything to continue";
 			return response;
 		}
 		if(player.historySize() == 1){
 			message = "a";
 		}
 		Node currentNode = getCurrentNode();
-
-
-
-
-
-
 
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
 
