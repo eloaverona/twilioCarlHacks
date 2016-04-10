@@ -972,3 +972,147 @@ abr 09, 2016 8:50:39 PM org.apache.catalina.core.ApplicationContext log
 INFORMAZIONI: ContextListener: contextInitialized()
 abr 09, 2016 8:50:39 PM org.apache.catalina.core.ApplicationContext log
 INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 8:59:18 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 8:59:18 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 9:03:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 9:03:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 9:11:52 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 10:27:46 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 10:27:46 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 10:39:34 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 10:39:38 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 10:46:28 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 10:48:55 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 10:54:34 PM org.apache.catalina.core.StandardWrapperValve invoke
+GRAVE: Servlet.service() for servlet TwilioServlet threw exception
+java.lang.NullPointerException
+	at com.twilio.Node.whatNext(Node.java:46)
+	at com.twilio.StoryMaker.makeResponse(StoryMaker.java:46)
+	at com.twilio.TwilioServlet.service(TwilioServlet.java:38)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:723)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:290)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:206)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:233)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:191)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:127)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:109)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:293)
+	at org.apache.coyote.http11.Http11Processor.process(Http11Processor.java:861)
+	at org.apache.coyote.http11.Http11Protocol$Http11ConnectionHandler.process(Http11Protocol.java:612)
+	at org.apache.tomcat.util.net.JIoEndpoint$Worker.run(JIoEndpoint.java:503)
+	at java.lang.Thread.run(Thread.java:745)
+
+abr 09, 2016 11:01:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 11:01:52 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 11:15:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 11:15:17 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()
+abr 09, 2016 11:34:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: ContextListener: contextInitialized()
+abr 09, 2016 11:34:55 PM org.apache.catalina.core.ApplicationContext log
+INFORMAZIONI: SessionListener: contextInitialized()

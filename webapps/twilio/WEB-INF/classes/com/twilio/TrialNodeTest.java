@@ -32,6 +32,9 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode441 = new HashMap<>();
         HashMap<String, Node> optionsNode5 = new HashMap<>();
         HashMap<String, Node> optionsNode6 = new HashMap<>();
+        HashMap<String, Node> optionsNode61 = new HashMap<>();
+        HashMap<String, Node> optionsNode62 = new HashMap<>();
+        HashMap<String, Node> optionsNode63 = new HashMap<>();
 
         this.mapFromIntToNode = new HashMap<>();
 
@@ -65,7 +68,13 @@ public class TrialNodeTest {
         Node node443 = new Node(443, "You pour the gas on the rats for some odd reason. One of the rat runs past the lit candle and catches on fire. Now there is a swarm of rats on fire going frantic around the room. You die.");
         node443.setDeath(true);
         Node node5 = new Node(5, "Your suspicion that someone is playing some insidious trick on you has been pretty much confirmed. From this door leads to a hallway that forks to the left and to the right. On the right is a courtyard, it would be nice to finally get outside. On the left are more stairs leading down, the sign above the stairs reads “Boiler room”. a: Go to courtyard. b: Go to Boiler room");
-        Node node6 = new Node(6, "You can tell that it’s somewhere in the early hours of the morning, still dark out but the sun should be rising soon. The courtyard is small and the fences surrounding it are way too high up to climb. In the center is a large palm tree surrounded by some low lying bushes, and along the far end wall you see a ladder leading onto a roof. a: Get a look through the holes of the fence. b: Sit by the central plants. c: Climb the ladder onto the roof.");
+        Node node6 = new Node(6, "You can tell that it’s somewhere in the early hours of the morning, still dark out but the sun should be rising soon. The courtyard is small and the fences surrounding it are way too high up to climb. In the center is a large palm tree surrounded by some low lying bushes, and along the far end wall you see a ladder leading onto a roof. a: Get a look through the holes of the fence. b: Sit by the central plants. c: Climb the ladder onto the roof. d: Go back. ");
+        Node node61 = new Node(61, "It’s difficult to see far given the thick foliage but you can tell that the estate you’ve found yourself in is on a large hill. You can’t see another town or any signs of civilized life from here at all. a: Go back. ");
+        Node node62 = new Node(62, "You see some berries growing on the bushes, you recognize them as blackberries and are confident that you’ll feel alright eating them. You take this opportunity to sit and rest for a while against the trunk of the palm tree. Somewhere in the soil around the base of the palm tree you find a rusty knife, maybe it’ll come in handy later. a: Go back. ");
+        node62.setObjectFound("knife");
+        Node node63 = new Node(63, "The ladder isn’t too long. On the roof you get a better view of your surroundings and can see thick forests for miles around surrounding this estate. There is a radiator up here with a pair of handcuffs attached to it, it’s locked so no chance of taking those. You can drop down to the lower level on the other side from where you came but you can’t be certain that you’ll be able to make it back if you did. a: Drop down. b: Go back. ");
+        Node node7 = new Node(7, "You’re suddenly hit with a wave of heat and humidity as you enter the Boiler room. The droning “thum” noises of machinery persist, drowning out the sounds of your own breath and footsteps. The room is large and despite the interweaving pipes, maneuverable. As you move about the room you notice a large valve connected to what you believe to be the boiler and a vent on the ceiling, it is within reach. a: Check out the valve. b: Look at the vent. c: Go back. ");
+        Node node8 = new Node(8, "You’ve dropped down on to what seems like a pavilion, you see huge double doors across from you. As you walk over towards the doors you hear snarling coming from a dark corner, out of the corner of your eye you see a black mass rushing you. After you manage to narrowly evade, your eyes meet the crimson demonic gaze of a black boar. The boar is twice as large as any hog you’ve ever seen and it’s sporting two eggshell tusks that put the hairs on the back of your neck on edge. It rushes you again. a: Dodge. b: Fight. c: Run");
 
         optionsNode1.put("a", node2);
 
@@ -108,8 +117,14 @@ public class TrialNodeTest {
         optionsNode44.put("a", node4);
         optionsNode441.put("a", node5);
         optionsNode5.put("a", node6);
-        //optionsNode5.put("b", node7);
-        //optionsNode6.put("a", node61);
+        optionsNode5.put("b", node7);
+        optionsNode6.put("a", node61);
+        optionsNode6.put("b", node62);
+        optionsNode6.put("c", node63);
+        optionsNode61.put("a", node6);
+        optionsNode62.put("a", node6);
+        optionsNode63.put("a", node8);
+        optionsNode63.put("b", node6);
 
 
         node1.setOptions(optionsNode1);
@@ -132,6 +147,10 @@ public class TrialNodeTest {
         node44.setOptions(optionsNode44);
         node441.setOptions(optionsNode441);
         node5.setOptions(optionsNode5);
+        node6.setOptions(optionsNode6);
+        node61.setOptions(optionsNode61);
+        node62.setOptions(optionsNode62);
+        node63.setOptions(optionsNode63);
 
 
 
@@ -159,7 +178,11 @@ public class TrialNodeTest {
         mapFromIntToNode.put(node443.getIdentifier(), node443);
         mapFromIntToNode.put(node5.getIdentifier(), node5);
         mapFromIntToNode.put(node6.getIdentifier(), node6);
-
+        mapFromIntToNode.put(node61.getIdentifier(), node61);
+        mapFromIntToNode.put(node62.getIdentifier(), node62);
+        mapFromIntToNode.put(node63.getIdentifier(), node63);
+        mapFromIntToNode.put(node7.getIdentifier(), node7);
+        mapFromIntToNode.put(node8.getIdentifier(), node8);
 
 
 
