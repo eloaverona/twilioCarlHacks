@@ -137,9 +137,12 @@ public class TrialNodeTest {
         node1011.setDeath(true);
         Node node1012 = new Node(1012, "The voice bellows a hearty laugh, begins to clap, and stands up from the chair. The figure begins to walk towards you. As it steps into the light, you see the figures face take shape. It looks just like you.");
         node1012.setDeath(true);
+        //TODO THIS ABOVE IS WEIRD.. THE GAME ENDS BUT NOTHING KILLS YOU
+        //TODO WHAT ABOUT KNIFE THING? DO YOU ALSO LOOSE IT IN NODE 9 EVEN WHEN YOU HAVEN'T USED IT BEFORE?
 
         Node node102 = new Node(102, "The voice says 'I saw what you were capable of. How you think. What makes you frustrated. You've impressed me so far.' a: Let me show you something to really be impressed about. (attack) b: I'm not some show dog that needs to impress you, give me some answers!");
-        Node node1021 = new Node(1021, "You stab the figure with the knife multiple times. You stand above its dead body. In the light you see the figures face looked just like yours.");
+        Node node1021 = new Node(1021, "You stab the figure with the knife multiple times. You stand above its dead body. In the light you see the figures face looked just like yours. - THE END");
+        node1021.setObjectNeeded("knife");
         node1021.setDeath(true);
         Node node1021Alt = new Node(-1021, "You tussle with the figure for a bit, your aggression catches it off guard but it unsheathes a knife and kills you.");
         node1021Alt.setDeath(true);

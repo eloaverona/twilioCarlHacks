@@ -10,7 +10,7 @@ public class Player {
 
     private ArrayList<String> objects;
     private ArrayList<Integer> history;
-    boolean sudo;
+
 
     /**
     * A constructor for the player class, it takes in one parameter, the name of the player.
@@ -25,13 +25,6 @@ public class Player {
 
     }
 
-    public boolean isSudo() {
-        return sudo;
-    }
-
-    public void setSudo(boolean sudo) {
-        this.sudo = sudo;
-    }
 
     //just a method to update the status of multiple items on the player.
     public boolean findItem(String item) {

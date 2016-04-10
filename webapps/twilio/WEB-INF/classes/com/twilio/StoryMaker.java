@@ -39,7 +39,7 @@ public class StoryMaker {
 			return response;
 		}
 		if (player.historySize() == 1) { // Player is now ready to start game.
-			if(message == "sudo") player.setSudo(true);
+
 			message = "a";
 
 		}
@@ -49,23 +49,28 @@ public class StoryMaker {
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
 
 		message = message.toLowerCase();
-		//if(player.isSudo()){
-			if(message.equals("boar")){
-				currentNode = mapFromIntToNode.get(8);
-				player.addToHistory(currentNode.getIdentifier());
 
-			}
-		if(message.equals("cellar")){
+		if(message.equals("boar")){
+			currentNode = mapFromIntToNode.get(8);
+			player.addToHistory(currentNode.getIdentifier());
+
+		}
+		else  if(message.equals("cellar")){
 			currentNode = mapFromIntToNode.get(4);
 			player.addToHistory(currentNode.getIdentifier());
 
 		}
-		if(message.equals("odin")){
+		else if(message.equals("odin")){
 			currentNode = mapFromIntToNode.get(10);
 			player.addToHistory(currentNode.getIdentifier());
 
 		}
-		//}
+		else if(message.equals("courtyard")){
+			currentNode = mapFromIntToNode.get(6);
+			player.addToHistory(currentNode.getIdentifier());
+
+		}
+
 
 		Node nextNode = currentNode.whatNext(message); // Add FailSafe to tell user if they have an invalid command
 
@@ -90,6 +95,11 @@ public class StoryMaker {
 				nextNode = currentNode;
 
 			}
+			else{
+				if(nextNode.getObjectNeeded().equals("knife")){
+					player.dropItem("knife");
+				}
+			}
 		}
 
         response = nextNode.getText();
@@ -101,11 +111,13 @@ public class StoryMaker {
 			player.clearHistory();
 		}
 
+		/*
 		if (nextNode.getIdentifier() == 9) { // Drop the knife if player reaches node 9.
 			if (player.getObjects().contains("knife")) {
 				player.dropItem("knife");
 			}
 		}
+		*/
 
 		if (nextNode.getObjectFound() != null) { // If player finds an object at this node
 			player.addItem(nextNode.getObjectFound());
