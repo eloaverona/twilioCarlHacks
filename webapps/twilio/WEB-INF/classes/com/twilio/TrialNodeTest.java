@@ -35,6 +35,21 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode61 = new HashMap<>();
         HashMap<String, Node> optionsNode62 = new HashMap<>();
         HashMap<String, Node> optionsNode63 = new HashMap<>();
+        HashMap<String, Node> optionsNode7 = new HashMap<>();
+        HashMap<String, Node> optionsNode71 = new HashMap<>();
+        HashMap<String, Node> optionsNode711 = new HashMap<>();
+        HashMap<String, Node> optionsNode72 = new HashMap<>();
+        HashMap<String, Node> optionsNode721 = new HashMap<>();
+        HashMap<String, Node> optionsNode8 = new HashMap<>();
+        HashMap<String, Node> optionsNode81 = new HashMap<>();
+        HashMap<String, Node> optionsNode812 = new HashMap<>();
+        HashMap<String, Node> optionsNode82 = new HashMap<>();
+        HashMap<String, Node> optionsNode82Alt = new HashMap<>();
+        HashMap<String, Node> optionsNode823 = new HashMap<>();
+        HashMap<String, Node> optionsNode9 = new HashMap<>();
+        HashMap<String, Node> optionsNode91 = new HashMap<>();
+
+
 
         this.mapFromIntToNode = new HashMap<>();
 
@@ -46,14 +61,14 @@ public class TrialNodeTest {
         Node node221 = new Node(221, "You look over a few of the papers, all of them are dated in the 1970’s and seem to concern some company named “Odin”. After a while you get bored and decide to stop reading. a: go back");
         Node node222 = new Node(222, "The drawer is empty and remarkably clean when compared to the rest of the room. Perfectly placed in the center is a single brass key. You take it and shut the drawer.. a: go back");
         node222.setObjectFound("key");
-        Node node3 = new Node(3, "The brass key seems to perfect fit the lock of this door. You try it and sure enough the door creaks open. You moved through the door into the next room. You lose the Brass key.\n" +
+        Node node3 = new Node(3, "The brass key seems to perfectly fit the lock of this door. You try it and sure enough the door creaks open. You moved through the door into the next room. You lose the Brass key.\n" +
                 "This room is just as dark as the last, from the low lying ceiling hangs a single lantern with a flame that seems on its last breath. It’s hard to make out from here but there seems to be a stuffed animal on a table stand on the other side of the room. You also notice a dirty mirror to your left. a: Check out that doll, b: Pick up the lantern, c: Look at yourself in the mirror");
         node3.setObjectNeeded("key");
         Node node3Alt = new Node(-3, "After a tough battle the door is still closed, you leave sweaty, embarrassed and with a splinter.");
         Node node31 = new Node(31, "What you thought was a stuffed animal was actually an old doll falling apart at the seams. Apart from its putrid stench and horrible uglyness you notice that it’s one eye is looking directly at your feet. You follow its gaze and see a handle on the floor. a: Open and go through the cellar door. b: Go back");
         Node node32 = new Node(32, "The handle was within reach so you take it easily. However it’s flame begins to dim even more, it’s down to an ember. It won’t last much longer. a: Go back");
         node32.setObjectFound("lantern");
-        Node node33 = new Node(33, "You almost don't recognize yourself. Your head has been shaved, there is a bruise under your right eye and you look much thinner than before. Just looking at yourself starts to make you feel a bit sick.");
+        Node node33 = new Node(33, "You almost don't recognize yourself. Your head has been shaved, there is a bruise under your right eye and you look much thinner than before. Just looking at yourself starts to make you feel a bit sick. a: Go back");
         Node node4 = new Node(4, "It feels like you’ve been descending this ladder for way too long. Just when you begin to get worried and consider going back up, you hit the bottom. There’s a long hallway leading from here into a wide and spacious room, it looks like it could have been a dining hall in a past life. As soon as you enter the hall a series of metal bars shut behind you barring off movement to where you came from. In this room you can see several unlit torches lining the walls along with a lit candle overhead and a small box on the floor in the center of the room. In one corner are a bunch of crates and in the other is a ledge with another door. a: Light the torches. b: Check out the box. c: Check out the crates. d: Get a closer look at the ledge.");
         Node node41 = new Node(41, "You use the lantern to light all the torches, the room is much brighter now. You notice that in the corner there is a wrench and you pick it up. a: Go back");
         node41.setObjectNeeded("lantern");
@@ -62,7 +77,7 @@ public class TrialNodeTest {
         Node node42 = new Node(42, "You kneel down to the box and open it, inside is a full water bottle. You’re surprised but relieved, it’s impossible to imagine how good some water could taste right now. You pick the bottle up to your mouth before you notice there’s a string attached to the bottle and suddenly an ominous rumbling sound begins to fill the room. From creaks and cracks all around the room swarms of rats begin to rush in, more and more every second. Frantically you stand right up and begin to think of a way out. a: Go back");
         Node node43 = new Node(43, "A few of the crates are open, inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can carry only one at a time. a: Take chain. b: Take Sand. c: Take gas.");
         Node node44 = new Node(44, "You can see the door above you, it doesn’t seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack. a: Go back");
-        Node node441 = new Node(441, "Use chain to climb up to the door. a: Walk through the door.");
+        Node node441 = new Node(441, "You use the chain to climb up to the door. a: Walk through the door.");
         Node node442 = new Node(442, "Even with the sand bags you still can’t reach the door. The rats flood the room and eat you alive.");
         node442.setDeath(true);
         Node node443 = new Node(443, "You pour the gas on the rats for some odd reason. One of the rat runs past the lit candle and catches on fire. Now there is a swarm of rats on fire going frantic around the room. You die.");
@@ -75,6 +90,36 @@ public class TrialNodeTest {
         Node node63 = new Node(63, "The ladder isn’t too long. On the roof you get a better view of your surroundings and can see thick forests for miles around surrounding this estate. There is a radiator up here with a pair of handcuffs attached to it, it’s locked so no chance of taking those. You can drop down to the lower level on the other side from where you came but you can’t be certain that you’ll be able to make it back if you did. a: Drop down. b: Go back. ");
         Node node7 = new Node(7, "You’re suddenly hit with a wave of heat and humidity as you enter the Boiler room. The droning “thum” noises of machinery persist, drowning out the sounds of your own breath and footsteps. The room is large and despite the interweaving pipes, maneuverable. As you move about the room you notice a large valve connected to what you believe to be the boiler and a vent on the ceiling, it is within reach. a: Check out the valve. b: Look at the vent. c: Go back. ");
         Node node8 = new Node(8, "You’ve dropped down on to what seems like a pavilion, you see huge double doors across from you. As you walk over towards the doors you hear snarling coming from a dark corner, out of the corner of your eye you see a black mass rushing you. After you manage to narrowly evade, your eyes meet the crimson demonic gaze of a black boar. The boar is twice as large as any hog you’ve ever seen and it’s sporting two eggshell tusks that put the hairs on the back of your neck on edge. It rushes you again. a: Dodge. b: Fight. c: Run");
+        Node node71 = new Node(71, "The valve is large enough that you have to use both hands to turn it. a: Turn the valve. b: Go back");
+        Node node72 = new Node(72, "The vent is large enough to crawl through. a: Open the vent. b: Go back");
+        Node node711 = new Node(711, "As you turn the valve the boiler to begins to shake more violently and radiate more heat than before. You feel the sweat dripping from all over your body until you realize the heat has just set the sprinklers off in the room. a: Turn the valve. b: Go back" );
+        Node node7111 = new Node(7111, "You turn the valve even more, it gets more and more difficult to turn the valve as you go but you continue anyways. At some point several bolts burst and shoot off from the tank, the boiler instantaneously explodes destroying the room and killing you in the process.");
+        node7111.setDeath(true);
+        Node node721 = new Node(721, "You unscrew each of the nuts and bolts of the vent and begin crawling through the air ducts. After a while you drop down into a room where you see a shadowed figure sitting in a chair facing you. a: Crawl through the vent. b: Go Back ");
+        node721.setObjectNeeded("wrench");
+        Node node721Alt = new Node(-721, "You try to pry open the vent with your bare heads but it doesn’t even budge.");
+        Node node81 = new Node(81, "You try and dodge the boar but his tusk still manages to catch you leg. You are hurt, running won’t be an option anymore. a: Dodge. b: Fight");
+        Node node811 = new Node(811, "You are unable to avoid the boar’s rush. It’s mighty tusk pierces your chest and you die.");
+        node811.setDeath(true);
+        Node node812 = new Node(812, "You get caught in the calf with another tusk but not without repaying the boar in full. You thrust the rusty knife deep into it’s snout. While the boar is doubled over in pain you limp over to the double doors. a: Walk through the door.");
+        node812.setObjectNeeded("knife");
+        Node node812Alt = new Node(-812, "The boar pierces your chest and you die");
+        node812Alt.setDeath(true);
+        Node node82 = new Node(82, "You get caught in the calf with another tusk but not without repaying the boar in full. You thrust the rusty knife deep into it’s snout. While the boar is doubled over in pain you limp over to the double doors. a: Walk through the door.");
+        node82.setObjectNeeded("knife");
+        Node node82Alt = new Node(-82, "The boar pierces your leg, you kick it off but are badly hurt. a: Dodge. b: Fight. c: Run.");
+        Node node821 = new Node(821, "The boar pierces your chest and you die.");
+        node821.setDeath(true);
+        Node node822 = new Node(822, "The boar pierces your chest and you die.");
+        node822.setDeath(true);
+        Node node823 = new Node(823, "Your kick was able to create enough separation between you and the boar for you to make it to the double door. a: Walk through the doors.");
+        Node node83 = new Node(83, "You try and run but the boar is so much faster, his tusk still manages to catch both of your legs. You can’t run, you can’t dodge, you can’t even stand up. You are demon pig chow. You die.");
+        node83.setDeath(true);
+        Node node9 = new Node(9, "You close the thick double doors behind you. There is a hallway that leads to a single bright red door several meters away. Along both sides of the hall are pictures hung from ornate frames. a: Look at the pictures. b: Open and go through the red door.");
+
+        Node node91 = new Node(91, "All the pictures are of you. You when you were healthy and full of life. You don’t recall any of these photos ever being taken, you don’t remember ever being in this coffee shop or ever owning that yellow shirt. There’s one picture of you with the doll from earlier, the doll is clean and intact in this picture. Your head starts to hurt. As you move along the hall the pictures become more recent. The penultimate picture is of you with your head shaved flashing a radiant smile to the camera. The last picture is of you knocked out on the chair which you woke up in earlier. a: Walk through the red door.");
+
+
 
         optionsNode1.put("a", node2);
 
@@ -125,6 +170,39 @@ public class TrialNodeTest {
         optionsNode62.put("a", node6);
         optionsNode63.put("a", node8);
         optionsNode63.put("b", node6);
+        optionsNode7.put("a", node71);
+        optionsNode7.put("b", node72);
+        optionsNode7.put("c", node5);
+        optionsNode8.put("a", node81);
+        optionsNode8.put("b", node82);
+        optionsNode8.put("c", node83);
+
+        optionsNode71.put("a", node711);
+        optionsNode71.put("b", node7);
+
+
+        optionsNode72.put("a", node721);
+        optionsNode72.put("b", node72);
+
+        optionsNode711.put("a", node7111);
+        optionsNode711.put("b", node71);
+        //optionsNode721.put("a", node10);
+        optionsNode721.put("b", node72);
+
+        optionsNode81.put("a", node811);
+        optionsNode81.put("b", node812);
+        optionsNode812.put("a", node9);
+        optionsNode82.put("a", node9);
+        optionsNode82Alt.put("a", node821);
+        optionsNode82Alt.put("b", node822);
+        optionsNode82Alt.put("c", node823);
+        optionsNode823.put("a", node9);
+
+        optionsNode9.put("a", node91);
+        //optionsNode9.put("b", node92);
+        //optionsNode91.put("a", node92);
+
+
 
 
         node1.setOptions(optionsNode1);
@@ -151,7 +229,19 @@ public class TrialNodeTest {
         node61.setOptions(optionsNode61);
         node62.setOptions(optionsNode62);
         node63.setOptions(optionsNode63);
-
+        node7.setOptions(optionsNode7);
+        node71.setOptions(optionsNode71);
+        node711.setOptions(optionsNode711);
+        node72.setOptions(optionsNode72);
+        node721.setOptions(optionsNode721);
+        node8.setOptions(optionsNode8);
+        node81.setOptions(optionsNode81);
+        node812.setOptions(optionsNode812);
+        node82.setOptions(optionsNode82);
+        node82Alt.setOptions(optionsNode82Alt);
+        node823.setOptions(optionsNode823);
+        node9.setOptions(optionsNode9);
+        node91.setOptions(optionsNode91);
 
 
 
@@ -182,7 +272,29 @@ public class TrialNodeTest {
         mapFromIntToNode.put(node62.getIdentifier(), node62);
         mapFromIntToNode.put(node63.getIdentifier(), node63);
         mapFromIntToNode.put(node7.getIdentifier(), node7);
+        mapFromIntToNode.put(node71.getIdentifier(), node71);
+        mapFromIntToNode.put(node711.getIdentifier(), node711);
+        mapFromIntToNode.put(node7111.getIdentifier(), node7111);
+        mapFromIntToNode.put(node721.getIdentifier(), node721);
+        mapFromIntToNode.put(node721Alt.getIdentifier(), node721Alt);
+
+        mapFromIntToNode.put(node72.getIdentifier(), node72);
         mapFromIntToNode.put(node8.getIdentifier(), node8);
+        mapFromIntToNode.put(node81.getIdentifier(), node81);
+        mapFromIntToNode.put(node811.getIdentifier(), node811);
+        mapFromIntToNode.put(node812.getIdentifier(), node812);
+        mapFromIntToNode.put(node812Alt.getIdentifier(), node812Alt);
+        mapFromIntToNode.put(node82.getIdentifier(), node82);
+        mapFromIntToNode.put(node82Alt.getIdentifier(), node82Alt);
+        mapFromIntToNode.put(node821.getIdentifier(), node821);
+        mapFromIntToNode.put(node822.getIdentifier(), node822);
+        mapFromIntToNode.put(node823.getIdentifier(), node823);
+        mapFromIntToNode.put(node83.getIdentifier(), node83);
+
+        mapFromIntToNode.put(node9.getIdentifier(), node9);
+
+        mapFromIntToNode.put(node91.getIdentifier(), node91);
+
 
 
 
