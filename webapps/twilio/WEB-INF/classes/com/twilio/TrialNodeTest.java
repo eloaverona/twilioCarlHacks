@@ -17,7 +17,6 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode2 = new HashMap<>();
         HashMap<String, Node> optionsNode21 = new HashMap<>();
         HashMap<String, Node> optionsNode22 = new HashMap<>();
-        HashMap<String, Node> optionsNode211 = new HashMap<>();
         HashMap<String, Node> optionsNode221 = new HashMap<>();
         HashMap<String, Node> optionsNode222 = new HashMap<>();
         HashMap<String, Node> optionsNode3 = new HashMap<>();
@@ -48,6 +47,10 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode823 = new HashMap<>();
         HashMap<String, Node> optionsNode9 = new HashMap<>();
         HashMap<String, Node> optionsNode91 = new HashMap<>();
+        HashMap<String, Node> optionsNode92 = new HashMap<>();
+        HashMap<String, Node> optionsNode10 = new HashMap<>();
+        HashMap<String, Node> optionsNode101 = new HashMap<>();
+        HashMap<String, Node> optionsNode102 = new HashMap<>();
 
 
 
@@ -57,7 +60,6 @@ public class TrialNodeTest {
         Node node2 = new Node(2, "You open your eyes and find yourself in a dimly lit room, immediately you try and stand up from the chair you find yourself in but something restrains you. Your wrists and ankles have been tied to the chair with rope, after a brief struggle you manage to free yourself. A quick glance of the room teaches you a few things. There seems to be a wooden door to the right, along with a desk directly ahead of you. The rest of room is remarkably empty, save for the ubiquitous cobwebs of course. a: Check out the door, b: Check out the desk.");
         Node node21 = new Node(21, "The door is made up of clearly old wood, you would think it would break easily but the lock seems sturdy and thick. a: Try and open the door, b: Go back.");
         Node node22 = new Node(22, "The desk is made up of hard redwood, but you almost couldn’t tell given all the papers scattered across the top. Along with the papers you notice a drawer. a: Investigate the paper, b: Open the drawer, c: go back");
-       // Node node211 = new Node(211, "MUST CLEAR UP HOW TO HANDLE KEY SCENERIO. a: Try and open the door, b: Go back");
         Node node221 = new Node(221, "You look over a few of the papers, all of them are dated in the 1970’s and seem to concern some company named “Odin”. After a while you get bored and decide to stop reading. a: go back");
         Node node222 = new Node(222, "The drawer is empty and remarkably clean when compared to the rest of the room. Perfectly placed in the center is a single brass key. You take it and shut the drawer.. a: go back");
         node222.setObjectFound("key");
@@ -118,8 +120,20 @@ public class TrialNodeTest {
         Node node9 = new Node(9, "You close the thick double doors behind you. There is a hallway that leads to a single bright red door several meters away. Along both sides of the hall are pictures hung from ornate frames. a: Look at the pictures. b: Open and go through the red door.");
 
         Node node91 = new Node(91, "All the pictures are of you. You when you were healthy and full of life. You don’t recall any of these photos ever being taken, you don’t remember ever being in this coffee shop or ever owning that yellow shirt. There’s one picture of you with the doll from earlier, the doll is clean and intact in this picture. Your head starts to hurt. As you move along the hall the pictures become more recent. The penultimate picture is of you with your head shaved flashing a radiant smile to the camera. The last picture is of you knocked out on the chair which you woke up in earlier. a: Walk through the red door.");
-
-
+        Node node92 = new Node(92, "You open the red door and step into a room. Ahead of you is a shadowy figure sitting in a chair facing you. a: *continue*");
+        Node node10 = new Node(10, "You want to say something but the words get stuck in your throat. The figure welcomes you with a “hello”, in a casual and calm tone. a: Who are you? b: What did you do to me?");
+        Node node101 = new Node(101, "You call me Odin. I am the one that orchestrated this little game you’ve been playing. You’ve done well to make it this far. a: I’ve done well to make it this far? What game are you talking about? What the Hell? b: This all seems so familiar, I know I’ve been here before. I know I’ve heard your voice before. Let me see your face.");
+        Node node1011 = new Node(1011, "The voice lets out a deep sigh. “Not quite the response I was looking for. Let’s go back to square one.” Suddenly you hear a loud thud, you’ve been hit with some blunt object under your right eye. The world goes black. You open your eyes and find yourself in a dimly lit room.");
+        node1011.setDeath(true);
+        Node node1012 = new Node(1012, "The voice bellows a hearty laugh and begins to clap and it stands up from the chair. The figure begins to walk towards you. As it steps into the light you see the figures face take shape. It looks just like you.");
+        node1012.setDeath(true);
+        Node node102 = new Node(102, "The voice says “I saw what you were capable of. How you think. What makes you frustrated. You’ve impressed me so far.” a: Let me show you something to really be impressed about. (attack) b: I’m not some show dog that needs to impress you, give me some answers!");
+        Node node1021 = new Node(1021, "You stab the figure with the knife multiple times. You stand above it’s dead body. In the light you see the figures face looked just like yours.");
+        node1021.setDeath(true);
+        Node node1021Alt = new Node(-1021, "You tussle with the figure for a bit, your aggression catches it off guard but it unsheathes a knife and kills you.");
+        node1021Alt.setDeath(true);
+        Node node1022 = new Node(1022, "The voice sighs, “It seems like this was a failed project after all.” The figure swiftly rushes you and stabs you multiple times, killing you.");
+        node1022.setDeath(true);
 
         optionsNode1.put("a", node2);
 
@@ -134,7 +148,6 @@ public class TrialNodeTest {
         optionsNode22.put("c", node2);
 
 
-        optionsNode211.put("a", node21);
         optionsNode221.put("a", node22);
         optionsNode222.put("a", node22);
 
@@ -186,7 +199,7 @@ public class TrialNodeTest {
 
         optionsNode711.put("a", node7111);
         optionsNode711.put("b", node71);
-        //optionsNode721.put("a", node10);
+        optionsNode721.put("a", node10);
         optionsNode721.put("b", node72);
 
         optionsNode81.put("a", node811);
@@ -199,8 +212,16 @@ public class TrialNodeTest {
         optionsNode823.put("a", node9);
 
         optionsNode9.put("a", node91);
-        //optionsNode9.put("b", node92);
-        //optionsNode91.put("a", node92);
+        optionsNode9.put("b", node92);
+        optionsNode91.put("a", node92);
+        optionsNode92.put("a", node10);
+        optionsNode10.put("a", node101);
+        optionsNode10.put("b", node102);
+        optionsNode101.put("a", node1011);
+        optionsNode101.put("b", node1012);
+        optionsNode102.put("a", node1021);
+        optionsNode102.put("b", node1022);
+
 
 
 
@@ -209,7 +230,6 @@ public class TrialNodeTest {
         node2.setOptions(optionsNode2);
         node21.setOptions(optionsNode21);
         node22.setOptions(optionsNode22);
-        //node211.setOptions(optionsNode211);
         node221.setOptions(optionsNode221);
         node222.setOptions(optionsNode222);
 
@@ -242,14 +262,16 @@ public class TrialNodeTest {
         node823.setOptions(optionsNode823);
         node9.setOptions(optionsNode9);
         node91.setOptions(optionsNode91);
-
+        node92.setOptions(optionsNode92);
+        node10.setOptions(optionsNode10);
+        node101.setOptions(optionsNode101);
+        node102.setOptions(optionsNode102);
 
 
         mapFromIntToNode.put(node1.getIdentifier(), node1);
         mapFromIntToNode.put(node2.getIdentifier(), node2);
         mapFromIntToNode.put(node21.getIdentifier(), node21);
         mapFromIntToNode.put(node22.getIdentifier(), node22);
-       // mapFromIntToNode.put(node211.getIdentifier(), node211);
         mapFromIntToNode.put(node221.getIdentifier(), node221);
         mapFromIntToNode.put(node222.getIdentifier(), node222);
         mapFromIntToNode.put(node3.getIdentifier(), node3);
@@ -294,6 +316,17 @@ public class TrialNodeTest {
         mapFromIntToNode.put(node9.getIdentifier(), node9);
 
         mapFromIntToNode.put(node91.getIdentifier(), node91);
+
+        mapFromIntToNode.put(node92.getIdentifier(), node92);
+        mapFromIntToNode.put(node10.getIdentifier(), node10);
+        mapFromIntToNode.put(node101.getIdentifier(), node101);
+        mapFromIntToNode.put(node1011.getIdentifier(), node1011);
+        mapFromIntToNode.put(node1012.getIdentifier(), node1012);
+        mapFromIntToNode.put(node102.getIdentifier(), node102);
+        mapFromIntToNode.put(node1021.getIdentifier(), node1021);
+        mapFromIntToNode.put(node1021Alt.getIdentifier(), node1021Alt);
+        mapFromIntToNode.put(node1022.getIdentifier(), node1022);
+
 
 
 
