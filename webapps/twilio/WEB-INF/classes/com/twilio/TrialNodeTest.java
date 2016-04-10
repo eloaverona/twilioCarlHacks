@@ -25,6 +25,13 @@ public class TrialNodeTest {
         HashMap<String, Node> optionsNode32 = new HashMap<>();
         HashMap<String, Node> optionsNode33 = new HashMap<>();
         HashMap<String, Node> optionsNode4 = new HashMap<>();
+        HashMap<String, Node> optionsNode41 = new HashMap<>();
+        HashMap<String, Node> optionsNode42 = new HashMap<>();
+        HashMap<String, Node> optionsNode43 = new HashMap<>();
+        HashMap<String, Node> optionsNode44 = new HashMap<>();
+        HashMap<String, Node> optionsNode441 = new HashMap<>();
+        HashMap<String, Node> optionsNode5 = new HashMap<>();
+        HashMap<String, Node> optionsNode6 = new HashMap<>();
 
         this.mapFromIntToNode = new HashMap<>();
 
@@ -45,14 +52,20 @@ public class TrialNodeTest {
         node32.setObjectFound("lantern");
         Node node33 = new Node(33, "You almost don't recognize yourself. Your head has been shaved, there is a bruise under your right eye and you look much thinner than before. Just looking at yourself starts to make you feel a bit sick.");
         Node node4 = new Node(4, "It feels like you’ve been descending this ladder for way too long. Just when you begin to get worried and consider going back up, you hit the bottom. There’s a long hallway leading from here into a wide and spacious room, it looks like it could have been a dining hall in a past life. As soon as you enter the hall a series of metal bars shut behind you barring off movement to where you came from. In this room you can see several unlit torches lining the walls along with a lit candle overhead and a small box on the floor in the center of the room. In one corner are a bunch of crates and in the other is a ledge with another door. a: Light the torches. b: Check out the box. c: Check out the crates. d: Get a closer look at the ledge.");
-        Node node41 = new Node(41, "You use the lantern to light all the torches, the room is much brighter now. You notice that in the corner there is a wrench and you pick it up.");
+        Node node41 = new Node(41, "You use the lantern to light all the torches, the room is much brighter now. You notice that in the corner there is a wrench and you pick it up. a: Go back");
         node41.setObjectNeeded("lantern");
+        node41.setObjectFound("wrench");
         Node node41Alt = new Node(-41, "You need a lantern to light the torches and you don’t have it.");
-        Node node42 = new Node(42, "You kneel down to the box and open it, inside is a full water bottle. You’re surprised but relieved, it’s impossible to imagine how good some water could taste right now. You pick the bottle up to your mouth before you notice there’s a string attached to the bottle and suddenly an ominous rumbling sound begins to fill the room. From creaks and cracks all around the room swarms of rats begin to rush in, more and more every second. Frantically you stand right up and begin to think of a way out.");
-        Node node43 = new Node(43, "A few of the crates are open, inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can only one at a time.");
-        Node node44 = new Node(44, "You can see the door above you, it doesn’t seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack.");
-
-
+        Node node42 = new Node(42, "You kneel down to the box and open it, inside is a full water bottle. You’re surprised but relieved, it’s impossible to imagine how good some water could taste right now. You pick the bottle up to your mouth before you notice there’s a string attached to the bottle and suddenly an ominous rumbling sound begins to fill the room. From creaks and cracks all around the room swarms of rats begin to rush in, more and more every second. Frantically you stand right up and begin to think of a way out. a: Go back");
+        Node node43 = new Node(43, "A few of the crates are open, inside of those you find a large metal chain, several sand bags, and a jug of gasoline. They are each big enough that you can carry only one at a time. a: Take chain. b: Take Sand. c: Take gas.");
+        Node node44 = new Node(44, "You can see the door above you, it doesn’t seem locked but definitely out of reach. A foot below the edge of the ledge is a coat rack. a: Go back");
+        Node node441 = new Node(441, "Use chain to climb up to the door. a: Walk through the door.");
+        Node node442 = new Node(442, "Even with the sand bags you still can’t reach the door. The rats flood the room and eat you alive.");
+        node442.setDeath(true);
+        Node node443 = new Node(443, "You pour the gas on the rats for some odd reason. One of the rat runs past the lit candle and catches on fire. Now there is a swarm of rats on fire going frantic around the room. You die.");
+        node443.setDeath(true);
+        Node node5 = new Node(5, "Your suspicion that someone is playing some insidious trick on you has been pretty much confirmed. From this door leads to a hallway that forks to the left and to the right. On the right is a courtyard, it would be nice to finally get outside. On the left are more stairs leading down, the sign above the stairs reads “Boiler room”. a: Go to courtyard. b: Go to Boiler room");
+        Node node6 = new Node(6, "You can tell that it’s somewhere in the early hours of the morning, still dark out but the sun should be rising soon. The courtyard is small and the fences surrounding it are way too high up to climb. In the center is a large palm tree surrounded by some low lying bushes, and along the far end wall you see a ladder leading onto a roof. a: Get a look through the holes of the fence. b: Sit by the central plants. c: Climb the ladder onto the roof.");
 
         optionsNode1.put("a", node2);
 
@@ -87,8 +100,16 @@ public class TrialNodeTest {
         optionsNode4.put("c", node43);
         optionsNode4.put("d", node44);
 
-
-
+        optionsNode41.put("a", node4);
+        optionsNode42.put("a", node4);
+        optionsNode43.put("a", node441);
+        optionsNode43.put("b", node442);
+        optionsNode43.put("c", node443);
+        optionsNode44.put("a", node4);
+        optionsNode441.put("a", node5);
+        optionsNode5.put("a", node6);
+        //optionsNode5.put("b", node7);
+        //optionsNode6.put("a", node61);
 
 
         node1.setOptions(optionsNode1);
@@ -105,6 +126,14 @@ public class TrialNodeTest {
         node33.setOptions(optionsNode33);
 
         node4.setOptions(optionsNode4);
+        node41.setOptions(optionsNode41);
+        node42.setOptions(optionsNode42);
+        node43.setOptions(optionsNode43);
+        node44.setOptions(optionsNode44);
+        node441.setOptions(optionsNode441);
+        node5.setOptions(optionsNode5);
+
+
 
 
         mapFromIntToNode.put(node1.getIdentifier(), node1);
@@ -125,6 +154,12 @@ public class TrialNodeTest {
         mapFromIntToNode.put(node42.getIdentifier(), node42);
         mapFromIntToNode.put(node43.getIdentifier(), node43);
         mapFromIntToNode.put(node44.getIdentifier(), node44);
+        mapFromIntToNode.put(node441.getIdentifier(), node441);
+        mapFromIntToNode.put(node442.getIdentifier(), node442);
+        mapFromIntToNode.put(node443.getIdentifier(), node443);
+        mapFromIntToNode.put(node5.getIdentifier(), node5);
+        mapFromIntToNode.put(node6.getIdentifier(), node6);
+
 
 
 
