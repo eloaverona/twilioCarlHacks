@@ -73,7 +73,9 @@ public class StoryMaker {
 		}
 
 		if (nextNode.getIdentifier() == 9) { // Drop the knife if player reaches node 9.
-			player.dropItem("knife");
+			if player.getObjects().contains("knife") {
+				player.dropItem("knife");
+			}
 		}
 
 		if (nextNode.getObjectFound() != null) { // If player finds an object at this node
