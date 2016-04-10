@@ -52,7 +52,6 @@ public class Player {
     }
 
     public Integer getCurrentPosition(){
-
         return history.get(history.size()-1);
     }
 
