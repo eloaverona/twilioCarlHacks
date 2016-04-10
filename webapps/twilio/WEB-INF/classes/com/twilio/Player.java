@@ -54,6 +54,12 @@ public class Player {
             return history.size();
         }
 
+    public ArrayList<String> getObjects() {
+        return objects;
+    }
 
- }
+    public void setObjects(ArrayList<String> objects) {
+        this.objects = objects;
+    }
+}
 
