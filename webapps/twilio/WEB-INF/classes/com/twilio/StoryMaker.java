@@ -32,7 +32,7 @@ public class StoryMaker {
 			//message = "a";
 
 			player.addToHistory(0);
-			response = "Welcome to the game. These are the instructions. Reply anything to continue";
+			response = "Hello and welcome. This is a text adventure game where you will be given some descriptive text from which you can decide how you want to respond. There may be some areas or actions that you may not be able to complete at certain points in the story but may be able complete them later on. Be warned that as a player you death is possible in this game. That being said, have fun and let the game begin! Reply yeah! to start!";
 			return response;
 		}
 		if(player.historySize() == 1){
@@ -58,6 +58,7 @@ public class StoryMaker {
 		if (nextNode.getObjectNeeded() != null) { // If node needs an object
 			if (player.getObjects().contains(nextNode.getObjectNeeded())) { // If player has object
 				player.dropItem(nextNode.getObjectNeeded());
+				nextNode.setObjectNeeded(null);
 			} else { // If player doesn't have object
 				nextNode = mapFromIntToNode.get(nextNode.getAltNodeID());
 				altMessage = nextNode.getText() + " ";
