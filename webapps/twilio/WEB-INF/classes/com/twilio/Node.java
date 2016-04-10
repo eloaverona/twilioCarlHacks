@@ -16,7 +16,8 @@ public class Node {
     private Integer identifier; // Integer that identifies each node uniquely;
     private boolean death; // Specifies if the node will kill the player
     private String objectFound;
-    private String objectNeeded;
+    private String objectNeeded; // If objectNeeded is not null, then Node needs an attribute
+    private Integer altNodeID;
 
 
 
@@ -28,6 +29,7 @@ public class Node {
         this.death = death;
         this.objectFound = objectFound;
         this.objectNeeded = objectNeeded;
+        this.altNodeID = -identifier;
     }
 
     public Node(Integer identifier, String text) {
@@ -52,6 +54,33 @@ public class Node {
 
 
 
+
+    public String messagePrompt() {
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(text);
+        sb.append(" ");
+
+        if (options.get("a") != null) {
+            sb.append("a: ");
+            sb.append(options.get("a"));
+        }
+
+        if (options.get("b") != null) {
+            sb.append("b: ");
+            sb.append(options.get("b"));
+        }
+        if (options.get("c") != null) {
+            sb.append("c: ");
+            sb.append(options.get("c"));
+        }
+        if (options.get("d") != null) {
+            sb.append("d: ");
+            sb.append(options.get("d"));
+        }
+
+        return sb.toString();
+    }
 
     public void setOptions(HashMap<String, Node> options) {
         this.options = options;
@@ -98,5 +127,14 @@ public class Node {
     public HashMap<String, Node> getOptions() {
 
         return options;
+    }
+
+
+    public Integer getAltNodeID() {
+        return altNodeID;
+    }
+
+    public void setAltNodeID(Integer altNodeID) {
+        this.altNodeID = altNodeID;
     }
 }

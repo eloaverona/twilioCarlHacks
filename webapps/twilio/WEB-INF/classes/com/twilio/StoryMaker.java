@@ -26,7 +26,7 @@ public class StoryMaker {
 
 
     public String makeResponse(String message) {
-		message = message.toLowerCase();
+
 		String response = "You entered an invalid command. Please try again. "; //default response is the invalid user input response.
 		if(player.historySize() == 0){
 			//message = "a";
@@ -42,10 +42,8 @@ public class StoryMaker {
 
 		if (message == null) return response + currentNode.getText(); // If player writes a blank message
 
+		message = message.toLowerCase();
 		Node nextNode = currentNode.whatNext(message); // Add FailSafe to tell user if they have an invalid command
-
-
-
 
 
 		if(nextNode == null) {  // If user didn't enter a valid command
@@ -56,12 +54,24 @@ public class StoryMaker {
 		// Allow player to go to that node. else make player go back to currentNode.
 		// TODO: Add a new method to determine where they go next and get the message to send.
 
+		String altMessage = "";
+		if (nextNode.getObjectNeeded() != null) { // If node needs an object
+			if (player.getObjects().contains(nextNode.getObjectNeeded())) { // If player has object
+				player.dropItem(nextNode.getObjectNeeded());
+			} else { // If player doesn't have object
+				nextNode = mapFromIntToNode.get(nextNode.getAltNodeID());
+				altMessage = nextNode.getText() + " ";
+				nextNode = currentNode;
+			}
+		}
+
+
 
 		// This is allowedNode instead of nextNode. The node the player actually is going to now.
-        response = nextNode.getText();
+        response = nextNode.getText(); // Going to make this messagePrompt() eventually. 
 		player.addToHistory(nextNode.getIdentifier());
 		if (response == null) response = "no text for this node. There is a problem with the directed graph data structure. Congrats, you found a bug."; // If there is a mistake in the program
-        return response;
+        return altMessage + response;
     }
 
 
