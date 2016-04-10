@@ -68,8 +68,17 @@ public class StoryMaker {
 
 
 		// This is allowedNode instead of nextNode. The node the player actually is going to now.
-        response = nextNode.getText(); // Going to make this messagePrompt() eventually.
+        response = nextNode.getText();
 		player.addToHistory(nextNode.getIdentifier());
+
+
+		// Process for if you die.
+		if (nextNode.isDeath()) {
+			player.clearHistory();
+		}
+
+
+
 		if (nextNode.getObjectFound() != null) {
 			player.addItem(nextNode.getObjectFound());
 		}
