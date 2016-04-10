@@ -68,8 +68,11 @@ public class StoryMaker {
 
 
 		// This is allowedNode instead of nextNode. The node the player actually is going to now.
-        response = nextNode.getText(); // Going to make this messagePrompt() eventually. 
+        response = nextNode.getText(); // Going to make this messagePrompt() eventually.
 		player.addToHistory(nextNode.getIdentifier());
+		if (nextNode.getObjectFound() != null) {
+			player.addItem(nextNode.getObjectFound());
+		}
 		if (response == null) response = "no text for this node. There is a problem with the directed graph data structure. Congrats, you found a bug."; // If there is a mistake in the program
         return altMessage + response;
     }
