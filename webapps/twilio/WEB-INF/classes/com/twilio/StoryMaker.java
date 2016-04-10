@@ -32,7 +32,7 @@ public class StoryMaker {
 		if(player.historySize() == 0){ // If player has just begun game.
 
 			player.addToHistory(0);
-			response = "Hello and welcome. This is a text adventure game where you will be given some descriptive text from which you can decide how you want to respond. " +
+			response = "Hello and welcome to Texture! This is a text adventure game where you will be given some descriptive text from which you can decide how you want to respond. " +
 					"There may be some areas or actions that you may not be able to complete at certain points in the story, but you may be able to complete them later on. " +
 					"There may also be times when your actions are not immediate. " +
 					"That being said, have fun and let the game begin! Reply yeah! to start!";
